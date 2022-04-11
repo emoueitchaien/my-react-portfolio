@@ -2,7 +2,7 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   return (
     <React.Fragment>
       <main id="main">
@@ -61,6 +61,6 @@ function Home() {
       <script src="script.js"></script>
     </React.Fragment>
   );
-}
+};
 
 export default Home;

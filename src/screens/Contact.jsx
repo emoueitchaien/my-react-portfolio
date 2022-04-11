@@ -2,7 +2,7 @@ import React from "react";
 import "./Contact.css";
 // import { Link } from "react-router-dom";
 
-function Home() {
+const Home = () => {
   return (
     <React.Fragment>
       <h2>Contact Me!</h2>
@@ -115,6 +115,6 @@ function Home() {
       </div>
     </React.Fragment>
   );
-}
+};
 
 export default Home;

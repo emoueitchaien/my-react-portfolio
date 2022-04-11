@@ -5,7 +5,7 @@ import pic2 from "./img/img-2.png";
 import pic3 from "./img/img-3.png";
 import pic4 from "./img/img-4.png";
 
-function Home() {
+const Home = () => {
   return (
     <React.Fragment>
       <div className="card-container">
@@ -96,6 +96,6 @@ function Home() {
       </div>
     </React.Fragment>
   );
-}
+};
 
 export default Home;
