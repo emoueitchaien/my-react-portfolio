@@ -1,7 +1,7 @@
 import "./App.css";
-import Contact from "./screens/Contact";
-import Home from "./screens/Home";
-import Work from "./screens/Work";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Work from "./pages/Work";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

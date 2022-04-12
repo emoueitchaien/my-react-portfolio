@@ -1,9 +1,9 @@
 import React from "react";
-import "./Work.css";
-import pic1 from "./img/img-1.png";
-import pic2 from "./img/img-2.png";
-import pic3 from "./img/img-3.png";
-import pic4 from "./img/img-4.png";
+import "../styles/Work.css";
+import pic1 from "../assets/img/img-1.png";
+import pic2 from "../assets/img/img-2.png";
+import pic3 from "../assets/img/img-3.png";
+import pic4 from "../assets/img/img-4.png";
 
 const Home = () => {
   return (
