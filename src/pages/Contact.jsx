@@ -2,17 +2,21 @@ import React from "react";
 import "../styles/Contact.css";
 // import { Link } from "react-router-dom";
 
-const Home = () => {
+const Contact = () => {
   return (
     <React.Fragment>
       <h2>Contact Me!</h2>
 
-      <div class="center">
+      <div className="center">
         <form action="#" target="_self">
-          <fieldset style={{ borderRadius: "8px" }} class="expand">
-            <legend class="leg1">Your Information</legend>
-            <div class="center2">
-              <div class="text1">
+          <fieldset
+            id="field"
+            style={{ borderRadius: "8px" }}
+            className="expand"
+          >
+            <legend className="leg1">Your Information</legend>
+            <div className="center2">
+              <div className="text1">
                 <div>
                   <div
                     style={{
@@ -25,7 +29,7 @@ const Home = () => {
                     <br />
                     <br />
                     <input
-                      class="inp"
+                      className="inp"
                       type="text"
                       required=""
                       oninvalid="this.setCustomValidity('I need to know Your Name!')"
@@ -39,7 +43,7 @@ const Home = () => {
                     <br />
                     <br />
                     <input
-                      class="inp"
+                      className="inp"
                       type="text"
                       name="mail"
                       required=""
@@ -54,10 +58,14 @@ const Home = () => {
             </div>
           </fieldset>
           <br />
-          <fieldset style={{ borderRadius: "8px" }} className="expand">
-            <legend class="leg1">Your Message</legend>
-            <div class="center2">
-              <div class="text1">
+          <fieldset
+            id="field"
+            style={{ borderRadius: "8px" }}
+            className="expand"
+          >
+            <legend className="leg1">Your Message</legend>
+            <div className="center2">
+              <div className="text1">
                 <div>
                   <div
                     style={{
@@ -86,7 +94,7 @@ const Home = () => {
 
                     <textarea
                       rows="7"
-                      cols="52"
+                      cols="45"
                       placeholder="Your Message here"
                       oninvalid="this.setCustomValidity('Thought you were writing something to me!?')"
                       oninput="this.setCustomValidity('')"
@@ -101,10 +109,10 @@ const Home = () => {
 
           <br />
           <br />
-          <div class="center3">
+          <div className="center3">
             <input
               id="submit"
-              class="button"
+              className="button"
               type="submit"
               name="Done"
               value="Submit!"
@@ -117,4 +125,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Contact;
