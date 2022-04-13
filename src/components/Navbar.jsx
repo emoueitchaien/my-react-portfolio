@@ -7,17 +7,17 @@ function Navbar() {
     <React.Fragment>
       <nav id="navbar">
         <span id="logo">
-          <Link to="/Home">emoueitchaien</Link>
+          <Link to="/home">emoueitchaien</Link>
         </span>
         <ul className="nav-list">
           <li>
-            <Link to="/About">About</Link>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <Link to={"/Work"}>Works</Link>
+            <Link to={"work"}>Works</Link>
           </li>
           <li>
-            <Link to={"/Contact"}>Contact</Link>
+            <Link to={"/contact"}>Contact</Link>
           </li>
           <li>
             <div id="outer-div">
