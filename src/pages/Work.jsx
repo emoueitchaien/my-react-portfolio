@@ -7,17 +7,28 @@ import Cards from "../components/Cards";
 const Home = () => {
   const [projDetails, setProjectDetails] = useState([]);
 
-  const fetchData = async () => {
-    const response = await axios.get(
-      "https://api.github.com/users/emoueitchaien/repos"
-    );
-    setProjectDetails(response.data);
-    console.log(projDetails[1]);
-  };
+  // const fetchData = async () => {
+  //   const response = await axios.get(
+  //     "https://api.github.com/users/emoueitchaien/repos"
+  //   );
+  //   setProjectDetails(response.data);
+  //   console.log(projDetails[1]);
+  // };
+
+  // useEffect(() => {
+  //   fetchData();
+  // }, []);
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    if (projDetails.length === 0) {
+      axios
+        .get("https://api.github.com/users/emoueitchaien/repos")
+        .then((response) => {
+          setProjectDetails(response.data);
+          console.log(projDetails[1]);
+        });
+    }
+  }, [projDetails]);
 
   return (
     <React.Fragment>
