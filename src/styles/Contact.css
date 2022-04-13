@@ -5,12 +5,12 @@ fieldset {
 
 #field {
   border: 2px solid black;
+  padding: 5px;
 }
 
 h2 {
   text-align: center;
   font: 400 50px/1.3 "Lobster Two", Helvetica, sans-serif;
-  /* color: #f08f8f; */
   color: black;
   text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -25,23 +25,25 @@ h3 {
 .center {
   margin: auto;
   width: 38%;
-  /* border: 3px solid #73ad21; */
   padding: 10px;
 }
 .center2 {
   margin: 6px 30px;
   width: 80%;
-  /* border: 3px solid #73ad21; */
   padding: 10px;
 }
-
+.center3 {
+  margin-top: -40px;
+}
 .text1 {
   font-size: 20px;
-  /*font: 400 20px/1.3 'Oleo Script', Helvetica, sans-serif;*/
   font: 400 20px/1.3 "Lobster Two", Helvetica, sans-serif;
   color: black;
 }
 
+.expand {
+  width: 100%;
+}
 .expand:hover {
   transform: scale(1.05);
 }
@@ -49,6 +51,7 @@ h3 {
 .center3 {
   text-align: center;
 }
+
 .inp {
   border-radius: 7px;
   height: 25px;
@@ -63,7 +66,6 @@ h3 {
 
 .inp2 {
   border-radius: 7px;
-  /*display: table;*/
   margin: auto;
   height: 20px;
   width: 100%;
@@ -77,9 +79,7 @@ h3 {
 
 .leg1 {
   margin-left: 40px;
-  /* color: #89ebaf; */
   color: black;
-  /*font: 400 50px/1.3 'Oleo Script', Helvetica, sans-serif;*/
   font: 400 50px/1.3 "Lobster Two", Helvetica, sans-serif;
   font-size: 30px;
 }
@@ -92,11 +92,9 @@ h3 {
 
 .button {
   position: relative;
-  /* background-color: #4caf50; */
   background-color: rgb(26, 25, 25);
   border: none;
   color: white;
-  /* color: black; */
   border-radius: 10px;
   text-align: center;
   text-decoration: none;
@@ -110,11 +108,11 @@ h3 {
 
 .button:hover {
   transform: scale(1.05);
-  /* background-color: green; */
   background-color: black;
 }
 
 textarea {
+  width: 100%;
   border: 2px solid black;
   border-radius: 8px;
   margin-bottom: 8px;

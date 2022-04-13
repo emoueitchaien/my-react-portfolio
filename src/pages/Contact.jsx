@@ -1,8 +1,31 @@
 import React from "react";
 import "../styles/Contact.css";
-// import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handleName = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleMessage = (e) => {
+    setMessage(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(name, email, message);
+    setName("");
+    setEmail("");
+    setMessage("");
+  };
   return (
     <React.Fragment>
       <h2>Contact Me!</h2>
@@ -31,9 +54,10 @@ const Contact = () => {
                     <input
                       className="inp"
                       type="text"
+                      value={name}
+                      name="name"
                       required=""
-                      oninvalid="this.setCustomValidity('I need to know Your Name!')"
-                      oninput="this.setCustomValidity('')"
+                      onChange={handleName}
                       placeholder="Your First Name"
                     />
                     <br />
@@ -45,10 +69,10 @@ const Contact = () => {
                     <input
                       className="inp"
                       type="text"
-                      name="mail"
+                      name="email"
+                      value={email}
                       required=""
-                      oninvalid="this.setCustomValidity('Incase I need to get back to you!')"
-                      oninput="this.setCustomValidity('')"
+                      onChange={handleEmail}
                       placeholder="your_name@domain"
                     />
                     <br />
@@ -83,8 +107,9 @@ const Contact = () => {
                   ></div>
                   <div
                     style={{
+                      width: "100%",
                       float: "left",
-                      marginRight: "40px",
+                      // marginRight: "40px",
                       marginBottom: "20px",
                     }}
                   >
@@ -93,11 +118,12 @@ const Contact = () => {
                     <br />
 
                     <textarea
+                      name="message"
+                      value={message}
                       rows="7"
                       cols="45"
                       placeholder="Your Message here"
-                      oninvalid="this.setCustomValidity('Thought you were writing something to me!?')"
-                      oninput="this.setCustomValidity('')"
+                      onChange={handleMessage}
                       required=""
                     ></textarea>
                   </div>
@@ -116,6 +142,7 @@ const Contact = () => {
               type="submit"
               name="Done"
               value="Submit!"
+              onClick={handleSubmit}
             />
             <br />
           </div>
