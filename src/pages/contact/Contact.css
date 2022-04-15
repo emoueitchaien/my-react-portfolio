@@ -56,7 +56,7 @@ h3 {
 .inp {
   border-radius: 7px;
   height: 30px;
-  width: 210px;
+  width: 187px;
 }
 
 .inp:hover,
@@ -80,7 +80,7 @@ h3 {
 
 ::placeholder {
   font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-size: 17px;
 }
 
 .leg1 {
@@ -127,4 +127,10 @@ textarea {
 
 textarea:hover {
   transform: scale(1.05);
+}
+
+#commonStyle {
+  float: "left";
+  margin-right: "40px";
+  margin-bottom: "20px";
 }

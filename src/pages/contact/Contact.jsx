@@ -57,6 +57,7 @@ const Contact = () => {
               <div className="text1">
                 <div>
                   <div
+                    id="commonStyle"
                     style={{
                       float: "left",
                       marginRight: "40px",
@@ -72,7 +73,6 @@ const Contact = () => {
                       id="name"
                       value={name}
                       name="name"
-                      required=""
                       onChange={handleName}
                       placeholder="  Your full name"
                     />
@@ -87,7 +87,6 @@ const Contact = () => {
                       type="text"
                       name="email"
                       value={email}
-                      required=""
                       onChange={handleEmail}
                       placeholder="  your_name@domain"
                     />
@@ -109,20 +108,6 @@ const Contact = () => {
                 <div>
                   <div
                     style={{
-                      float: "left",
-                      marginRight: "40px",
-                      marginBottom: "20px",
-                    }}
-                  ></div>
-                  <div
-                    style={{
-                      float: "left",
-                      marginRight: "40px",
-                      marginBottom: "20px",
-                    }}
-                  ></div>
-                  <div
-                    style={{
                       width: "100%",
                       float: "left",
                       marginBottom: "20px",
@@ -139,7 +124,6 @@ const Contact = () => {
                       cols="45"
                       placeholder="  Your message here.."
                       onChange={handleMessage}
-                      required=""
                     ></textarea>
                   </div>
                 </div>
