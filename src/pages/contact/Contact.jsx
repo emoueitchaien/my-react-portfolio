@@ -19,12 +19,21 @@ const Contact = () => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const validateName = () => {
+    if (name.trim() === "") {
+      alert("Please insert your name!");
+      return false;
+    } else if (name.trim().length <= 4) {
+      alert("Please enter your fullname!");
+      return false;
+    } else if (!name.trim().match(/^[ a-zA-Z]+$/)) {
+      alert("Invalid name!");
+      return false;
+    }
+  };
 
-    if (name.trim().length <= 4) {
-      alert("Please enter your fullname");
-    } else if (
+  const validateEmail = () => {
+    if (
       !String(email)
         .toLowerCase()
         .match(
@@ -32,15 +41,26 @@ const Contact = () => {
         )
     ) {
       alert("Enter a valid email");
-    } else if (message.trim().length <= 5) {
+    }
+  };
+
+  const validateMessage = () => {
+    if (message.trim().length <= 5) {
       alert("Message too short !?");
-    } else {
+    }
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (validateName() && validateMessage() && validateEmail()) {
       console.log(name, email, message);
       setName("");
       setEmail("");
       setMessage("");
     }
   };
+
   return (
     <React.Fragment>
       <h2>Contact Me!</h2>
@@ -150,5 +170,4 @@ const Contact = () => {
     </React.Fragment>
   );
 };
-
 export default Contact;
