@@ -4,7 +4,7 @@
 }
 
 body {
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 nav {
@@ -99,7 +99,6 @@ nav ul li {
   height: 90vh;
   bottom: 0%;
   left: 0%;
-  overflow: hidden;
 }
 
 #rightcircle {
@@ -114,7 +113,7 @@ nav ul li {
 }
 
 #man {
-  background-image: url("../assets/img/Untitled-1.png");
+  background-image: url("../../assets/img/man.png");
   background-repeat: no-repeat;
   background-position: 65% 10%;
   background-size: 90vh;

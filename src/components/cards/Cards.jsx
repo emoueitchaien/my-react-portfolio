@@ -1,6 +1,6 @@
 import React from "react";
-import pic1 from "../assets/img/img-1.png";
-// import pic1 from "https://avatars.githubusercontent.com/u/51243294?v=4";
+import pic1 from "../../assets/img/proj_img1.png";
+
 const Cards = (props) => {
   return (
     <>

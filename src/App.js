@@ -1,9 +1,9 @@
-import "./App.css";
-import Contact from "./pages/Contact";
-import Home from "./pages/Home";
-import Work from "./pages/Work";
+import "./styles/App.css";
+import Contact from "./pages/contact/Contact";
+import Home from "./pages/homepage/Home";
+import Work from "./pages/work/Work";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
