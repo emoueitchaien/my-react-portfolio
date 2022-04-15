@@ -6,4 +6,4 @@ To run the app :-
 Inside the project directory do:
 
 - yarn install
-- yarn cd
+- yarn start
