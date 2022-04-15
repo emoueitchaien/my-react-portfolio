@@ -13,7 +13,6 @@ const Home = () => {
         .get("https://api.github.com/users/emoueitchaien/repos")
         .then((response) => {
           setProjectDetails(response.data);
-          console.log(projDetails[1]);
         });
     }
   }, [projDetails]);

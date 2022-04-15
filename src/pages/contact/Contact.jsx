@@ -21,10 +21,25 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    setName("");
-    setEmail("");
-    setMessage("");
+
+    if (name.trim().length <= 4) {
+      alert("Please enter your fullname");
+    } else if (
+      !String(email)
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        )
+    ) {
+      alert("Enter a valid email");
+    } else if (message.trim().length <= 5) {
+      alert("Message too short !?");
+    } else {
+      console.log(name, email, message);
+      setName("");
+      setEmail("");
+      setMessage("");
+    }
   };
   return (
     <React.Fragment>
@@ -54,11 +69,12 @@ const Contact = () => {
                     <input
                       className="inp"
                       type="text"
+                      id="name"
                       value={name}
                       name="name"
                       required=""
                       onChange={handleName}
-                      placeholder="Your First Name"
+                      placeholder="  Your full name"
                     />
                     <br />
                   </div>
@@ -73,7 +89,7 @@ const Contact = () => {
                       value={email}
                       required=""
                       onChange={handleEmail}
-                      placeholder="your_name@domain"
+                      placeholder="  your_name@domain"
                     />
                     <br />
                   </div>
@@ -109,7 +125,6 @@ const Contact = () => {
                     style={{
                       width: "100%",
                       float: "left",
-                      // marginRight: "40px",
                       marginBottom: "20px",
                     }}
                   >
@@ -122,7 +137,7 @@ const Contact = () => {
                       value={message}
                       rows="6"
                       cols="45"
-                      placeholder="Your Message here"
+                      placeholder="  Your message here.."
                       onChange={handleMessage}
                       required=""
                     ></textarea>
