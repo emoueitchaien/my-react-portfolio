@@ -120,7 +120,7 @@ const Contact = () => {
                     <textarea
                       name="message"
                       value={message}
-                      rows="7"
+                      rows="6"
                       cols="45"
                       placeholder="Your Message here"
                       onChange={handleMessage}

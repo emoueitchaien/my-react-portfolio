@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow: hidden;
-}
-
 nav {
   display: flex;
   height: 10vh;
@@ -51,7 +47,6 @@ nav ul li {
 .intro {
   height: 90vh;
   position: absolute;
-  overflow: hidden;
 }
 
 #info {
@@ -99,6 +94,7 @@ nav ul li {
   height: 90vh;
   bottom: 0%;
   left: 0%;
+  overflow: hidden;
 }
 
 #rightcircle {

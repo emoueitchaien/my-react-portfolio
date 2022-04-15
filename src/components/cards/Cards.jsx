@@ -1,11 +1,25 @@
 import React from "react";
 import pic1 from "../../assets/img/proj_img1.png";
+import pic2 from "../../assets/img/proj_img2.png";
+import pic3 from "../../assets/img/proj_img3.png";
+import pic4 from "../../assets/img/proj_img4.png";
 
 const Cards = (props) => {
+  var pictures = {
+    1: pic1,
+    2: pic2,
+    3: pic3,
+    4: pic4,
+  };
+
   return (
     <>
       <div className="card">
-        <img className="card-img" src={pic1} alt="Card cap" />
+        <img
+          className="card-img"
+          src={pictures[Math.floor(Math.random() * 4) + 1]}
+          alt="Card cap"
+        />
         <div className="overlay">
           <div className="cardborder">
             <h5 className="card-title">{props.project.name}</h5>
