@@ -1,0 +1,149 @@
+@import url("http://fonts.googleapis.com/css?family=Lobster+Two");
+fieldset {
+  border: 2px solid black;
+}
+
+#field {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+h2 {
+  text-align: center;
+  font: 400 50px/1.3 "Lobster Two", Helvetica, sans-serif;
+  color: black;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+h3 {
+  color: #bcecf7;
+  font: 400 50px/1.3 "Lobster Two", Helvetica, sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+.center {
+  margin: auto;
+  width: 38%;
+  padding: 10px;
+}
+.center2 {
+  margin: 6px 30px;
+  width: 80%;
+  padding: 10px;
+}
+.center3 {
+  margin-top: -40px;
+}
+.text1 {
+  font-size: 20px;
+  font: 400 20px/1.3 "Lobster Two", Helvetica, sans-serif;
+  color: black;
+}
+
+.expand {
+  width: 100%;
+}
+.expand:hover {
+  transform: scale(1.05);
+}
+
+.center3 {
+  text-align: center;
+}
+
+.inp {
+  border-radius: 7px;
+  margin-bottom: 5px;
+  height: 30px;
+  width: 187px;
+}
+
+.inp:hover,
+.inp2:hover,
+.inp3:hover {
+  transform: scale(1.05);
+}
+
+.inp2 {
+  border-radius: 7px;
+  margin: auto;
+  height: 20px;
+  width: 100%;
+}
+
+.inp3 {
+  border-radius: 7px;
+  height: 20px;
+  width: 200px;
+}
+
+::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 17px;
+}
+
+.leg1 {
+  margin-left: 40px;
+  color: black;
+  font: 400 50px/1.3 "Lobster Two", Helvetica, sans-serif;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.sub {
+  font-size: 40px;
+  width: 50px;
+  height: 30px;
+}
+
+.button {
+  position: relative;
+  background-color: rgb(26, 25, 25);
+  border: none;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font: 400 25px/1.3 "Lobster Two", Helvetica, sans-serif;
+  margin-bottom: 50px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background-color: black;
+}
+
+textarea {
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+textarea:hover {
+  transform: scale(1.05);
+}
+
+#nameError {
+  display: none;
+  font-size: medium;
+  color: red;
+}
+
+#emailError {
+  display: none;
+  font-size: medium;
+  color: red;
+}
+
+#messageError {
+  display: none;
+  font-size: medium;
+  color: red;
+}
