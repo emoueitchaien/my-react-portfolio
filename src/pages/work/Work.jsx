@@ -9,11 +9,9 @@ const Home = () => {
 
   useEffect(() => {
     if (projDetails.length === 0) {
-      axios
-        .get("https://api.github.com/users/emoueitchaien/repos")
-        .then((response) => {
-          setProjectDetails(response.data);
-        });
+      axios.get("http://localhost:5000/projects").then((response) => {
+        setProjectDetails(response.data);
+      });
     }
   }, [projDetails]);
 
