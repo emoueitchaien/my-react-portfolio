@@ -17,6 +17,8 @@ const Home = () => {
 
   return (
     <React.Fragment>
+      <h2>My Projects So Far</h2>
+
       <div className="card-container">
         {projDetails.map((project, index) => {
           return <Cards key={index} project={project} />;

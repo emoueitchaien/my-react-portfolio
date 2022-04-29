@@ -1,0 +1,22 @@
+.social {
+  position: absolute;
+  right: 100px;
+  bottom: 100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .social {
+    flex-direction: row;
+    right: 11vw;
+    bottom: -10vh;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

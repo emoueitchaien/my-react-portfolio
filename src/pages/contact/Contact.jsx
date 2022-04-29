@@ -1,6 +1,7 @@
 import React from "react";
 import "./Contact.css";
 import { useState } from "react";
+import axios from "axios";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -62,7 +63,8 @@ const Contact = () => {
 
   const validateMessage = () => {
     if (message.trim().length <= 5) {
-      document.getElementById("messageError").innerHTML = "Enter a valid email";
+      document.getElementById("messageError").innerHTML =
+        "Too short! Enter a valid message";
       document.getElementById("messageError").style.display = "block";
       return false;
     } else {
@@ -78,6 +80,29 @@ const Contact = () => {
     validateMessage();
     if (validateName() && validateEmail() && validateMessage()) {
       console.log(name, email, message);
+      const values = {
+        Name: name,
+        Email: email,
+        Message: message,
+      };
+
+      const sendMail = async () => {
+        try {
+          const res = await axios.post(
+            "http://localhost:5000/contact/",
+            values
+          );
+          if (res) {
+            console.log(res);
+            alert("Your message is sent!");
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      };
+
+      sendMail();
+
       setName("");
       setEmail("");
       setMessage("");
@@ -100,7 +125,6 @@ const Contact = () => {
               <div className="text1">
                 <div>
                   <div
-                    id="commonStyle"
                     style={{
                       float: "left",
                       marginRight: "40px",

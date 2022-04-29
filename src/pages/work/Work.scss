@@ -5,6 +5,9 @@
   box-sizing: border-box;
 }
 
+h2 {
+  margin-top: 25px;
+}
 .card-container {
   width: 90%;
   margin: auto;
@@ -16,11 +19,28 @@
 }
 
 .card {
-  width: 29%;
   margin: 20px;
   position: relative;
   text-align: center;
   overflow: hidden;
+}
+
+@media only screen and (min-width: 0px) {
+  .card {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .card {
+    width: 43%;
+  }
+}
+
+@media only screen and (min-width: 1073px) {
+  .card {
+    width: 29%;
+  }
 }
 
 img {
