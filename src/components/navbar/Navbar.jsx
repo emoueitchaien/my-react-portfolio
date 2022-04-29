@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 function Navbar() {
@@ -11,19 +11,14 @@ function Navbar() {
         </span>
         <ul className="nav-list">
           <li>
-            <Link to={"/about"}>About</Link>
+            <NavLink to={"/home"}>Home</NavLink>
           </li>
           <li>
-            <Link to={"work"}>Works</Link>
+            <NavLink to={"work"}>Works</NavLink>
           </li>
           <li>
-            <Link to={"/contact"}>Contact</Link>
+            <NavLink to={"/contact"}>Contact</NavLink>
           </li>
-          {/* <li>
-            <div id="outer-div">
-              <div id="inner-div" className="moon"></div>
-            </div>
-          </li> */}
         </ul>
       </nav>
     </React.Fragment>
