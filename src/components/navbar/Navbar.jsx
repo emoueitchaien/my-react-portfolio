@@ -11,7 +11,7 @@ function Navbar() {
         </span>
         <ul className="nav-list">
           <li>
-            <Link to="/about">About</Link>
+            <Link to={"/about"}>About</Link>
           </li>
           <li>
             <Link to={"work"}>Works</Link>
@@ -19,11 +19,11 @@ function Navbar() {
           <li>
             <Link to={"/contact"}>Contact</Link>
           </li>
-          <li>
+          {/* <li>
             <div id="outer-div">
               <div id="inner-div" className="moon"></div>
             </div>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </React.Fragment>
