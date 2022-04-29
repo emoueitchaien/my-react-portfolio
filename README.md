@@ -11,9 +11,13 @@ This project showcase the personal skills, works, share knowlodge through blogs.
     sass
 ```
 
-## Available Scripts
+## Project Setup and Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs required dependencies for project.
 
 ### `npm start`
 
