@@ -148,6 +148,12 @@ a {
   text-decoration: none;
 }
 
+#onlySmall {
+  display: flex;
+  height: 100px;
+  width: 80%;
+}
+
 a,
 a:visited,
 a:hover,
@@ -240,7 +246,7 @@ a:active {
   }
 
   #info h1,
-#info p {
+  #info p {
     padding-left: 0;
   }
 
