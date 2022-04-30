@@ -9,6 +9,7 @@ This project showcase the personal skills, works, share knowlodge through blogs.
     axios
     react-icons
     sass
+    react-toastify
 ```
 
 ## Project Setup and Available Scripts
