@@ -1,8 +1,11 @@
 a,
 a:visited,
-a:hover,
-a:active {
+a:hover {
   color: inherit;
+}
+
+.active {
+  border-bottom: 1px solid #7562d5;
 }
 
 a {

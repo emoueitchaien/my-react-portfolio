@@ -9,11 +9,17 @@ This project showcase the personal skills, works, share knowlodge through blogs.
     axios
     react-icons
     sass
+    react-router-dom
+    react-toastify
 ```
 
-## Available Scripts
+## Project Setup and Available Scripts
 
 In the project directory, you can run:
+
+### `yarn install`
+
+Installs required dependencies for project.
 
 ### `npm start`
 

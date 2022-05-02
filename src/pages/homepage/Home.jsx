@@ -14,7 +14,6 @@ const Home = () => {
         <div id="social">
           <SocialSites />
         </div>
-
         <div id="info">
           <h1 id="mohan">
             Mohan

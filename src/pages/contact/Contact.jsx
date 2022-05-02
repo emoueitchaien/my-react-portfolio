@@ -3,6 +3,9 @@ import "./Contact.css";
 import { useState } from "react";
 import axios from "axios";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -79,7 +82,6 @@ const Contact = () => {
     validateEmail();
     validateMessage();
     if (validateName() && validateEmail() && validateMessage()) {
-      console.log(name, email, message);
       const values = {
         Name: name,
         Email: email,
@@ -93,11 +95,16 @@ const Contact = () => {
             values
           );
           if (res) {
-            console.log(res);
-            alert("Your message is sent!");
+            toast.success("Message Sent!", {
+              autoClose: 2500,
+              position: "bottom-right",
+            });
           }
         } catch (err) {
-          console.log(err);
+          toast.error("Failed to Send Message!", {
+            autoClose: 2500,
+            position: "bottom-right",
+          });
         }
       };
 
@@ -217,6 +224,7 @@ const Contact = () => {
               onClick={handleSubmit}
             />
             <br />
+            <ToastContainer />
           </div>
         </form>
       </div>
