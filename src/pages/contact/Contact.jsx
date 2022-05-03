@@ -91,7 +91,7 @@ const Contact = () => {
       const sendMail = async () => {
         try {
           const res = await axios.post(
-            "http://localhost:5000/contact/",
+            "https://my-react-portfolio-backend.herokuapp.com/contact/",
             values
           );
           if (res) {

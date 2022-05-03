@@ -9,9 +9,11 @@ const Home = () => {
 
   useEffect(() => {
     if (projDetails.length === 0) {
-      axios.get("http://localhost:5000/projects").then((response) => {
-        setProjectDetails(response.data);
-      });
+      axios
+        .get("https://my-react-portfolio-backend.herokuapp.com/projects")
+        .then((response) => {
+          setProjectDetails(response.data);
+        });
     }
   }, [projDetails]);
 
