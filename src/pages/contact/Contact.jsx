@@ -95,13 +95,13 @@ const Contact = () => {
             values
           );
           if (res) {
-            toast.success("Message Sent!", {
+            toast.success("Message Sent!!", {
               autoClose: 2500,
               position: "bottom-right",
             });
           }
         } catch (err) {
-          toast.error("Failed to Send Message!", {
+          toast.error("Failed to Send Message!!", {
             autoClose: 2500,
             position: "bottom-right",
           });
